@@ -1,0 +1,93 @@
+[
+    {
+      "id": "123",
+      "title": "Exploring Vue 3",
+      "description": "Sharing my experience migrating a project to Vue 3.",
+      "created_at": "2025-02-06T10:15:30Z",
+      "author": "Eduardo Quadros",
+      "likes": 32,
+      "tags": ["Vue 3", "JavaScript", "Front-end"],
+      "comments": [
+        {
+          "author": "John Smith",
+          "content": "Great insights! I recently migrated to Vue 3 and faced some issues with the Composition API. Any tips?",
+          "created_at": "2025-02-06T12:30:00Z"
+        },
+        {
+          "author": "Alice Johnson",
+          "content": "Awesome article! Vue 3 has been a game-changer for my projects.",
+          "created_at": "2025-02-06T14:10:00Z"
+        }
+      ]
+    },
+    {
+      "id": "456",
+      "title": "Tips for Optimizing React with TanStack Query",
+      "description": "Some best practices I use to improve performance when working with TanStack Query.",
+      "created_at": "2025-02-05T14:20:10Z",
+      "author": "John Smith",
+      "likes": 18,
+      "tags": ["React", "TanStack Query", "Performance"],
+      "comments": [
+        {
+          "author": "Maria Oliveira",
+          "content": "Thanks for the tips! Do you recommend using TanStack Query for server-side rendering as well?",
+          "created_at": "2025-02-05T15:00:00Z"
+        },
+        {
+          "author": "Carlos Mendes",
+          "content": "This helped a lot! I was struggling with caching issues in my React app.",
+          "created_at": "2025-02-05T16:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": "789",
+      "title": "The Importance of AG Grid in Complex Applications",
+      "description": "Why I chose AG Grid to handle large data volumes in my application.",
+      "created_at": "2025-02-04T08:45:50Z",
+      "author": "Maria Oliveira",
+      "likes": 40,
+      "tags": ["AG Grid", "Data Tables", "UX"],
+      "comments": [
+        {
+          "author": "Eduardo Quadros",
+          "content": "AG Grid is super powerful! Have you tried integrating it with Vue 3?",
+          "created_at": "2025-02-04T10:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "101213",
+      "title": "Comparing Pinia and Vuex: Which One to Use?",
+      "description": "An analysis of the differences between Pinia and Vuex and when to choose each.",
+      "created_at": "2025-02-03T16:30:00Z",
+      "author": "Carlos Mendes",
+      "likes": 22,
+      "tags": ["Vue", "Pinia", "State Management"],
+      "comments": [
+        {
+          "author": "Alice Johnson",
+          "content": "Great comparison! Pinia feels much more intuitive to me than Vuex.",
+          "created_at": "2025-02-03T17:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "131415",
+      "title": "Implementing Authentication in Next.js with Auth0",
+      "description": "A step-by-step guide on setting up Auth0 in Next.js for secure authentication.",
+      "created_at": "2025-02-02T12:10:45Z",
+      "author": "Anna Souza",
+      "likes": 28,
+      "tags": ["Next.js", "Auth0", "Security"],
+      "comments": [
+        {
+          "author": "John Smith",
+          "content": "Really helpful guide! I had some trouble with token expiration—any advice?",
+          "created_at": "2025-02-02T13:00:00Z"
+        }
+      ]
+    }
+  ]
+  
