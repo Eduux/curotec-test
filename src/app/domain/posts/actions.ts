@@ -1,4 +1,3 @@
-import "server-only";
 import { Post } from "./types";
 import data from "./data.json";
 
@@ -9,6 +8,5 @@ export function getAll() {
 }
 
 export function getById(id: string) {
-  console.log(id);
   return posts.find((post) => post.id === id);
 }
