@@ -19,7 +19,7 @@ export default function Navigation() {
 
   return (
     <nav
-      className="flex items-center justify-center gap-x-4"
+      className="flex items-center justify-center gap-x-4 mb-8"
       aria-label="Main Navigation"
     >
       {nav.map((n) => (
