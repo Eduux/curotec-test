@@ -4,7 +4,6 @@ import Comments from "../components/comments";
 import { usePostInteractionStore } from "../../stores/posts";
 import { Comment } from "@/domain/posts/types";
 
-// Mock do store
 vi.mock("../../stores/posts", () => ({
   usePostInteractionStore: vi.fn(),
 }));
