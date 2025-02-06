@@ -1,14 +1,20 @@
 import { Calendar, ThumbsUp, MessageCircle } from "lucide-react";
 
-import { Post } from "@/app/domain/posts/types";
-import { formatDate } from "@/app/utils";
+import { Post } from "@/domain/posts/types";
+import { formatDate } from "@/utils";
 import Link from "next/link";
 
 type Props = {
   post: Post;
+  isLiked: boolean;
+  onClickLikeUnlikeButton(): void;
 };
 
-export default function PostCard({ post }: Props) {
+export default function PostCard({
+  post,
+  isLiked,
+  onClickLikeUnlikeButton,
+}: Props) {
   return (
     <div className="bg-white shadow-md rounded-xl p-5 border border-gray-200 transition-transform hover:scale-[1.01] hover:shadow-lg">
       <Link href={`/posts/${post.id}`}>
@@ -42,8 +48,14 @@ export default function PostCard({ post }: Props) {
           ))}
         </div>
 
-        <button className="bg-gray-100 border px-4 py-1.5 rounded-md flex items-center text-gray-500 hover:border-black">
-          <ThumbsUp className="mr-2" /> {post.likes} Likes
+        <button
+          className={`bg-gray-100 border px-4 py-1.5 rounded-md flex items-center text-gray-500 hover:border-black ${
+            isLiked ? "border-black" : ""
+          }`}
+          onClick={() => onClickLikeUnlikeButton()}
+        >
+          <ThumbsUp className={`mr-2 ${isLiked ? "text-black" : ""}`} />{" "}
+          {isLiked ? post.likes : post.likes + 1} Likes
         </button>
       </div>
     </div>

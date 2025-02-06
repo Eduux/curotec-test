@@ -1,4 +1,4 @@
-import * as postActions from "@/app/domain/posts/actions";
+import * as postActions from "@/domain/posts/actions";
 
 export async function GET() {
   try {
