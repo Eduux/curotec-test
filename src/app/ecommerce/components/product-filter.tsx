@@ -9,6 +9,7 @@ export default function ProductFilter() {
   return (
     <div className="grid grid-cols-2 md:flex gap-4 mb-4">
       <Button
+        data-testid="button-Electronics"
         onClick={() =>
           category === "Electronics"
             ? setCategory(null)
@@ -16,13 +17,14 @@ export default function ProductFilter() {
         }
         className={
           category !== "Electronics"
-            ? "bg-gray-200 text-inherit hover:text-white"
+            ? "bg-gray-300 text-inherit hover:text-white"
             : ""
         }
       >
         Electronics
       </Button>
       <Button
+        data-testid="button-Accessories"
         onClick={() =>
           category === "Accessories"
             ? setCategory(null)
@@ -30,13 +32,14 @@ export default function ProductFilter() {
         }
         className={
           category !== "Accessories"
-            ? "bg-gray-200 text-inherit hover:text-white"
+            ? "bg-gray-300 text-inherit hover:text-white"
             : ""
         }
       >
         Accessories
       </Button>
       <Button
+        data-testid={`button-sort-price-${sortOrder || "asc"}`}
         onClick={() =>
           sortOrder === "asc" ? setSortOrder("desc") : setSortOrder("asc")
         }

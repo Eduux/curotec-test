@@ -1,7 +1,7 @@
+import { Category } from "@/domain/ecommerce/types";
 import { create } from "zustand";
 
 type SortOrder = "asc" | "desc";
-type Category = "Electronics" | "Accessories";
 
 interface ProductFilterStore {
   category: Category | null;
