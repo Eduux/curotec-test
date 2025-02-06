@@ -44,3 +44,5 @@ Run tests
 ```bash
 npm run test
 ```
+
+# [Live demo vercel https://curotec-test.vercel.app/ ](https://curotec-test.vercel.app/)
