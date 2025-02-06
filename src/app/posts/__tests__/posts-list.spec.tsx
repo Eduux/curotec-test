@@ -53,7 +53,7 @@ const mockData: Post[] = [
   },
 ];
 
-vi.mock("../../stores/posts", () => ({
+vi.mock("../../../stores/posts", () => ({
   usePostInteractionStore: vi.fn(),
 }));
 
