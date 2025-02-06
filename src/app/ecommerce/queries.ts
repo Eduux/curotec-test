@@ -3,7 +3,7 @@ import { useProductStore } from "@/stores/products";
 import { Product } from "@/domain/ecommerce/types";
 
 const fetchProducts = async (): Promise<Product[]> => {
-  const response = await fetch("http://localhost:3000/api/ecommerce");
+  const response = await fetch("/api/ecommerce");
   if (!response.ok) throw new Error("Failed to fetch products");
   return response.json();
 };
