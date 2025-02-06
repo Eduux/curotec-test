@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Comment, Post } from "../../domain/posts/types";
+import { Comment, Post } from "../domain/posts/types";
 
 interface IPostInteractionStore {
   likedPosts: Post["id"][];

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "./navigation";
+import { ReactQueryProvider } from "./react-query-provier";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,7 @@ export default function RootLayout({
         <main className="max-w-7xl mx-auto py-9 px-6">
           <Navigation />
 
-          {children}
+          <ReactQueryProvider>{children}</ReactQueryProvider>
         </main>
       </body>
     </html>

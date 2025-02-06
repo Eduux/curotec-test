@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { vi, Mock } from "vitest";
 import Comments from "../components/comments";
-import { usePostInteractionStore } from "../../stores/posts";
+import { usePostInteractionStore } from "../../../stores/posts";
 import { Comment } from "@/domain/posts/types";
 
 vi.mock("../../stores/posts", () => ({

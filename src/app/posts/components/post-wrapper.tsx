@@ -2,7 +2,7 @@
 
 import { Post } from "@/domain/posts/types";
 import PostCard from "./post-card";
-import { usePostInteractionStore } from "@/app/stores/posts";
+import { usePostInteractionStore } from "@/stores/posts";
 import GoBackButton from "@/components/go-back-button";
 import Comments from "./comments";
 

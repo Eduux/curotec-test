@@ -3,6 +3,7 @@ import { Calendar, ThumbsUp, MessageCircle } from "lucide-react";
 import { Post } from "@/domain/posts/types";
 import { formatDate } from "@/utils";
 import Link from "next/link";
+import Button from "@/components/button";
 
 type Props = {
   post: Post;
@@ -53,16 +54,16 @@ export default function PostCard({
           ))}
         </div>
 
-        <button
-          className={`bg-gray-100 border px-4 py-1.5 rounded-md flex items-center text-gray-500 hover:border-black ${
-            isLiked ? "border-black" : ""
+        <Button
+          className={`flex items-center text-gray-500  ${
+            isLiked ? "border border-black font-bold" : "bg-gray-400 border"
           }`}
           data-testid={`like-button-${post.id}`}
           onClick={() => onClickLikeUnlikeButton()}
         >
-          <ThumbsUp className={`mr-2 ${isLiked ? "text-black" : ""}`} />{" "}
+          <ThumbsUp className="mr-2" />
           {isLiked ? post.likes : post.likes + 1} Likes
-        </button>
+        </Button>
       </div>
     </div>
   );

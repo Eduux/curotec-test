@@ -1,10 +1,10 @@
 "use client";
 
-import { Post } from "../../../domain/posts/types";
+import { Post } from "@/domain/posts/types";
 
-import NotFound from "../../../components/not-found";
+import NotFound from "@/components/not-found";
 import PostCard from "./post-card";
-import { usePostInteractionStore } from "../../stores/posts";
+import { usePostInteractionStore } from "@/stores/posts";
 
 type Props = {
   posts: Post[];

@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { usePostInteractionStore } from "@/app/stores/posts";
+import { usePostInteractionStore } from "@/stores/posts";
 import { Comment } from "@/domain/posts/types";
 import { formatDate } from "@/utils";
+import Button from "@/components/button";
 
 type Props = {
   postId: string;
@@ -69,21 +70,16 @@ export default function Comments({ postId, comments }: Props) {
         )}
       </ul>
 
-      <div className="mt-4 flex items-center">
+      <div className="mt-4 space-x-4 flex items-center">
         <input
           type="text"
-          className="flex-1 p-2 border rounded-lg text-sm"
+          className="flex-1 p-3 border rounded-lg text-sm"
           placeholder="Write a comment..."
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleAddComment()}
         />
-        <button
-          onClick={handleAddComment}
-          className="ml-2 bg-blue-500 text-white px-3 py-2 rounded-lg text-sm hover:bg-blue-600"
-        >
-          Add
-        </button>
+        <Button onClick={handleAddComment}>Add</Button>
       </div>
     </div>
   );

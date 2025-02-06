@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { vi, Mock } from "vitest";
 import PostsList from "../components/posts-list";
-import { usePostInteractionStore } from "../../stores/posts";
+import { usePostInteractionStore } from "../../../stores/posts";
 import { Post } from "../../../domain/posts/types";
 
 const mockData: Post[] = [
