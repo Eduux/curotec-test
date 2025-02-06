@@ -16,7 +16,7 @@ export default function Comments({ postId, comments }: Props) {
     usePostInteractionStore();
 
   const myComments = getCommentsByPostId(postId);
-  console.log(myComments);
+
   const handleAddComment = () => {
     if (!newComment.trim()) return;
 

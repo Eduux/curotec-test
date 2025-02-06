@@ -18,7 +18,12 @@ export default function PostCard({
   return (
     <div className="bg-white shadow-md rounded-xl p-5 border border-gray-200 transition-transform hover:scale-[1.01] hover:shadow-lg">
       <Link href={`/posts/${post.id}`}>
-        <h2 className="text-lg font-bold text-gray-900">{post.title}</h2>
+        <h2
+          data-testid={post.title}
+          className="text-lg font-bold text-gray-900"
+        >
+          {post.title}
+        </h2>
 
         <p className="text-gray-700 mt-1">{post.description}</p>
 
@@ -52,6 +57,7 @@ export default function PostCard({
           className={`bg-gray-100 border px-4 py-1.5 rounded-md flex items-center text-gray-500 hover:border-black ${
             isLiked ? "border-black" : ""
           }`}
+          data-testid={`like-button-${post.id}`}
           onClick={() => onClickLikeUnlikeButton()}
         >
           <ThumbsUp className={`mr-2 ${isLiked ? "text-black" : ""}`} />{" "}

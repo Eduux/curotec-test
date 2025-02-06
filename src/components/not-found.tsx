@@ -1,3 +1,3 @@
 export default function NotFound() {
-  return <div>No items found.</div>;
+  return <div data-testid="not-found">No items found.</div>;
 }

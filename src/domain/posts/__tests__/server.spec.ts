@@ -1,7 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 import { getAll, getById } from "../actions";
 
-// Mockando os dados corretamente para Vitest
 vi.mock("../data.json", () => ({
   default: [
     {
